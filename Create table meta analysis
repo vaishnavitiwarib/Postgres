@@ -1,0 +1,54 @@
+CREATE TABLE IF NOT EXISTS public."META4"
+(
+    paper_id character(100) COLLATE pg_catalog."default",
+    observation_id character(100) COLLATE pg_catalog."default",
+    included character varying(100) COLLATE pg_catalog."default",
+    author character varying(200) COLLATE pg_catalog."default",0
+    year_ integer,
+    title character varying(200) COLLATE pg_catalog."default",
+    journal character varying(200) COLLATE pg_catalog."default",
+    doi character varying(2048) COLLATE pg_catalog."default",
+    url character varying(2048) COLLATE pg_catalog."default",
+    languages character varying(100) COLLATE pg_catalog."default",
+    databases character varying(100) COLLATE pg_catalog."default",
+    latitude double precision,
+    longitude double precision,
+    country character varying(100) COLLATE pg_catalog."default",
+    taxa_level character varying(100) COLLATE pg_catalog."default",
+    taxa_name character varying(100) COLLATE pg_catalog."default",
+    orders character varying(10) COLLATE pg_catalog."default",
+    families character varying(100) COLLATE pg_catalog."default",
+    genus character varying(100) COLLATE pg_catalog."default",
+    binomial character varying(100) COLLATE pg_catalog."default",
+    life_history_stage character varying(100) COLLATE pg_catalog."default",
+    experimental_year integer,
+    experimental_yearend integer,
+    sampling_method character varying(100) COLLATE pg_catalog."default",
+    biodiversity_metric character varying(100) COLLATE pg_catalog."default",
+    unit character varying(100) COLLATE pg_catalog."default",
+    iucn_category1 character varying(100) COLLATE pg_catalog."default",
+    iucn_category2 character varying(100) COLLATE pg_catalog."default",
+    iucn_category3 character varying(100) COLLATE pg_catalog."default",
+    treatment character varying(100) COLLATE pg_catalog."default",
+    treatment_quantity character varying(100) COLLATE pg_catalog."default",
+    treatment_quantity_unit character varying(100) COLLATE pg_catalog."default",
+    control1 character varying(100) COLLATE pg_catalog."default",
+    extracted_from character varying(200) COLLATE pg_catalog."default",
+    evidence_type character varying(100) COLLATE pg_catalog."default",
+    treatment_n character varying(100) COLLATE pg_catalog."default",
+    treatment_mean double precision,
+    treatment_error double precision,
+    treatment_error_type character varying(100) COLLATE pg_catalog."default",
+    control_n integer,
+    control_mean double precision,
+    control_error double precision,
+    control_error_type character varying(100) COLLATE pg_catalog."default",
+    contributor_name character varying(100) COLLATE pg_catalog."default",
+    search_date character varying(100) COLLATE pg_catalog."default",
+    notes character varying(100) COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."META4"
+    OWNER to postgres;
