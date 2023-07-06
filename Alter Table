@@ -1,0 +1,3 @@
+ALTER TABLE insect_1 ADD COLUMN Treatment_N Numeric;
+
+ALTER TABLE insect_1 ALTER COLUMN Treatment_N TYPE NUMERIC;
